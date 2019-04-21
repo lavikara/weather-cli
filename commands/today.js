@@ -13,7 +13,7 @@ module.exports = async (args) => {
 
         console.log(`Location: ${location.city}, ${location.country_name}. \nCurrent Weather Conditions:`)
         console.log(`\n\tDate: ${location.time_zone}`)        
-        console.log(`\tDescription: ${weather.weather[0].description} \n\tTemperature: ${(weather.main.temp - 273.15)}°C`)
+        console.log(`\tDescription: ${weather.weather[0].description} \n\tTemperature: ${(weather.main.temp - 273.15).toFixed(1)}°C`)
     }catch(error){
         console.error(error);
     }

@@ -14,9 +14,8 @@ module.exports = async (args) => {
         console.log(`Location: ${location.city}, ${location.country_name}. \nFive Day Forcast:`)
         weather.list.forEach(element => {
             console.log(`\nDate&Time: ${element.dt_txt}`)
-            console.log(`Description: ${element.weather[0].description} \nTemperature: ${element.main.temp - 273.15}°C`)
+            console.log(`Description: ${element.weather[0].description} \nTemperature: ${(element.main.temp - 273.15).toFixed(1)}°C`)
         });
-        // console.log(`\t${forcast}`)
     }catch(error){
         console.error(error);
     }
