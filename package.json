@@ -19,7 +19,7 @@
     "weather": "bin/weather"
   },
   "dependencies": {
-    "axios": "^0.18.1",
+    "axios": "^0.21.1",
     "minimist": "^1.2.3",
     "ora": "^3.4.0"
   },
